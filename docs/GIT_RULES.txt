@@ -1,5 +1,17 @@
 # Git Rules
 
+## Temporary Enforcement Note
+
+This repository is currently private on a free GitHub account, so GitHub does not enforce branch protection or rulesets.
+
+Until we upgrade or move plans, these rules are enforced by team process:
+
+- Do not push directly to main.
+- Do not push directly to dev unless agreed.
+- Work in feature branches.
+- Open pull requests into dev.
+- Brandon merges into main only when a stable milestone is reached.
+
 ## Branches
 
 - main is protected.
