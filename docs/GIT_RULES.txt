@@ -1,0 +1,40 @@
+# Git Rules
+
+## Branches
+
+- main is protected.
+- No direct pushes to main.
+- Work happens in feature branches.
+- Merge through pull requests.
+
+## Branch Naming
+
+Examples:
+
+- feature/player-movement
+- feature/car-spawner
+- feature/item-boxes
+- feature/finish-line
+- fix/player-stumble-bug
+
+## Commit Rules
+
+Good:
+
+- Add basic player sprint
+- Add car spawn timer
+- Fix crown not attaching to leader
+
+Bad:
+
+- stuff
+- updates
+- Brandon broke everything again
+- final final real
+
+## Merge Rules
+
+- Pull request required.
+- At least one other person reviews.
+- Do not merge broken scenes.
+- Do not commit giant assets

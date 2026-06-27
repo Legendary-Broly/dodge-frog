@@ -1,0 +1,49 @@
+# Design Rules
+
+## Core Idea
+
+A third-person physics comedy race where tiny players cross increasingly hostile highways while cars, items, bodies, and other players create chaos.
+
+## Core Rule
+
+Complexity comes from players interacting with simple rules, never from the rules themselves.
+
+## Movement
+
+- Walk = precision.
+- Sprint = speed with fixed stamina.
+- Jump = vertical correction only. No extra forward speed.
+- Dive = full commitment and full ragdoll recovery.
+
+## Player Physics
+
+- Walking into another player = cosmetic bump only.
+- Sprinting into another player = both players stumble.
+- Sprint-jumping into another player = both players stumble.
+- Diving = full ragdoll.
+- Diving into another player = both players full ragdoll.
+
+## Cars
+
+- Car hit = instant death.
+- Dead player body remains in the road as a permanent ragdoll physics object.
+- Dead bodies keep nameplates and only change cosmetically (like X eyes).
+- Dead bodies can be hit by cars, items, other bodies, and players.
+
+## Items
+
+- One item slot.
+- Walk through item box to receive a random item.
+- One button uses held item.
+- No inventory.
+- No HP.
+- No damage numbers.
+- No status effects.
+- Items create movement, hazards, or physics interactions.
+
+## Rounds
+
+- First player across wins.
+- After first place finishes, a countdown begins.
+- Players score by placement.
+- Session leader wears the crown next round.

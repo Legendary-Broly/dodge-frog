@@ -1,0 +1,33 @@
+# Prototype Scope
+
+## Version 0.1 Goal
+
+Make the smallest playable version that proves whether the game is funny.
+
+## Required
+
+- One road level.
+- Third-person/action/first-person camera.
+- One placeholder player model.
+- Local or hosted multiplayer test.
+- Walk, sprint, jump, dive.
+- Normal, stumble, ragdoll, dead states.
+- Cars spawning from both directions.
+- Car hit causes instant death.
+- Dead bodies remain as physics objects.
+- Finish line.
+- Placement scoring.
+- Crown on session leader.
+- Three item prototypes.
+
+## Not Allowed Yet
+
+- Cosmetics menu.
+- Progression.
+- Multiple maps.
+- Character classes.
+- Unlocks.
+- Advanced matchmaking.
+- Complex vehicle AI.
+- Complex ragdoll tuning.
+- More than three items.
