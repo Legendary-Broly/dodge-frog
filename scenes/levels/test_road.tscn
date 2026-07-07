@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://yol8uylnpd1x"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_s7yj1"]
+
+[sub_resource type="Sky" id="Sky_ugsol"]
+sky_material = SubResource("ProceduralSkyMaterial_s7yj1")
+
+[sub_resource type="Environment" id="Environment_0epon"]
+background_mode = 2
+sky = SubResource("Sky_ugsol")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0epon"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0epon"]
+size = Vector2(30, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ugsol"]
+albedo_color = Color(0, 0.39215687, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0epon"]
+size = Vector3(2, 0.001, 2.0011902)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7yj1"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ugsol"]
+size = Vector2(30, 3.67)
+center_offset = Vector3(0, 0.01, 0)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ugsol"]
+size = Vector3(30.036865, 2, 4)
+
+[node name="TestRoad" type="Node3D" unique_id=363714453]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1905741971]
+environment = SubResource("Environment_0epon")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=433361847]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 30, 0)
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=1991027749]
+physics_material_override = SubResource("PhysicsMaterial_0epon")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=270939310]
+mesh = SubResource("PlaneMesh_0epon")
+surface_material_override/0 = SubResource("StandardMaterial3D_ugsol")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1026505145]
+shape = SubResource("BoxShape3D_0epon")
+
+[node name="RoadVisual" type="MeshInstance3D" parent="." unique_id=1368690053]
+material_override = SubResource("StandardMaterial3D_s7yj1")
+mesh = SubResource("PlaneMesh_ugsol")
+
+[node name="StartArea" type="Marker3D" parent="." unique_id=1586809230]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -7.634012)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1546999627]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 11)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1565035697]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.039957047, -0.12050438, -7.016079)
+shape = SubResource("BoxShape3D_ugsol")
+debug_color = Color(0.9721034, 0, 0.4466545, 0.41960785)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=425069560]
+transform = Transform3D(-1, 0, -8.742278e-08, -6.606409e-08, 0.6549352, 0.7556851, 5.725625e-08, 0.7556851, -0.6549352, 0, 7.9393787, -10.813549)
