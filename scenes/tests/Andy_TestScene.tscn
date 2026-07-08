@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://deymsyory3iih"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pxqgl"]
+albedo_color = Color(0.342818, 0.59901977, 0.57410485, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_egk1q"]
+albedo_color = Color(0.32156864, 0.1882353, 0.047058824, 1)
+
+[node name="AndyTestScene" type="Node3D" unique_id=752713139]
+
+[node name="Cube" type="CSGBox3D" parent="." unique_id=251813017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_overlay = SubResource("StandardMaterial3D_pxqgl")
+
+[node name="Ground" type="CSGBox3D" parent="." unique_id=1892304770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5206426, 0)
+size = Vector3(32.14868, 1, 35.49243)
+material = SubResource("StandardMaterial3D_egk1q")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=373180806]
+transform = Transform3D(1, 0, 0, 0, 0.49999997, 0.86602545, 0, -0.86602545, 0.49999997, 0, 0, 4)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1097499319]
+transform = Transform3D(0.25000003, -0.25881907, 0.9330127, 0.066987306, 0.9659259, 0.25000003, -0.9659258, 0, 0.2588191, 3, 2.3195872, 2)
