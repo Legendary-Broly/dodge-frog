@@ -76,7 +76,7 @@ material_override = SubResource("StandardMaterial3D_s7yj1")
 mesh = SubResource("PlaneMesh_ugsol")
 
 [node name="StartArea" type="Marker3D" parent="." unique_id=1586809230]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -7.634012)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -8)
 
 [node name="DriedPondMesh" type="MeshInstance3D" parent="StartArea" unique_id=1167426603]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
@@ -84,14 +84,14 @@ mesh = SubResource("CylinderMesh_parlp")
 surface_material_override/0 = SubResource("StandardMaterial3D_lxvat")
 
 [node name="FinishArea" type="Area3D" parent="." unique_id=1546999627]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3.9408731)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 8)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="FinishArea" unique_id=1565035697]
 shape = SubResource("BoxShape3D_ugsol")
 debug_color = Color(0.9721034, 0, 0.4466545, 0.41960785)
 
 [node name="WetPondMesh" type="MeshInstance3D" parent="FinishArea" unique_id=1451279713]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 3.6933198)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_0epon")
 surface_material_override/0 = SubResource("StandardMaterial3D_parlp")
 
