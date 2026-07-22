@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cqnbnpca8jfud"]
+
+[ext_resource type="Script" uid="uid://di8h2rmww2016" path="res://scripts/vehicles/car.gd" id="1_76dk7"]
+[ext_resource type="ArrayMesh" uid="uid://c4qv4d5r30tq2" path="res://assets/vehicles/car.glb" id="1_aatvh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_76dk7"]
+size = Vector3(3.9492188, 1.8164063, 2.029358)
+
+[node name="Car" type="Area3D" unique_id=1213912301]
+script = ExtResource("1_76dk7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1790598804]
+mesh = ExtResource("1_aatvh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=264906149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016601563, 0.89160156, -0.0047912598)
+shape = SubResource("BoxShape3D_76dk7")

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://yol8uylnpd1x"]
 
+[ext_resource type="PackedScene" uid="uid://cqnbnpca8jfud" path="res://scenes/vehicles/car.tscn" id="1_33yk0"]
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_s7yj1"]
 
 [sub_resource type="Sky" id="Sky_ugsol"]
@@ -97,3 +99,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_parlp")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=425069560]
 transform = Transform3D(-1, 0, -8.742278e-08, -6.606409e-08, 0.6549352, 0.7556851, 5.725625e-08, 0.7556851, -0.6549352, 0, 7.9393787, -10.813549)
+
+[node name="Car" parent="." unique_id=1213912301 instance=ExtResource("1_33yk0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.057665, 0, 0.013626099)
